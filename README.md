@@ -23,3 +23,8 @@ Next, the build_similarity_matrix function creates a cosine similarity matrix be
 The textrank_summarizer function then applies the PageRank algorithm to this graph using the pagerank function from the networkx library. PageRank assigns a score to each sentence based on its importance in the graph. Sentences with higher scores are considered more important. The top num_sentences (default is 3) with the highest scores are selected as the summary. These are extracted from the original, unprocessed sentences to preserve their original form and clarity.
 
 In the final part of the program, the script runs as a standalone tool. It prompts the user to enter a paragraph, ending input with the word "END" on a new line. Once the input is collected, the program processes it using the TextRank summarization algorithm and prints out the top-ranked sentences as the final summary. This makes the tool user-friendly and suitable for educational or research purposes where quick summaries are needed. The method is unsupervised and doesn’t rely on any pre-labeled data, making it broadly applicable across different domains and text types. Overall, this summarizer offers a lightweight and effective approach to condensing text information.
+
+
+
+# OUTPUT
+![Image](https://github.com/user-attachments/assets/3c34d8bb-29ca-4b83-a7f1-8a0dd5f6dcdd)
